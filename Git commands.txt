@@ -1,0 +1,47 @@
+08:29 26-12-2022 
+
+To add ssh key to our git account --	https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+
+git init --> to initialize a local repo 
+
+--->authorize 
+	git config --list
+	git config --global user.name "ravi3177"
+	git config --global user.email "ravitejanagalla3177@gmail.com"
+
+git add 
+git commit -m "some message" 
+git remote add origin https://github.com/ravi3177/CD.git
+git push -u origin main or (master) -->(for first time)
+git push 
+git show (hash value)
+git log (--oneline)
+
+git clone url.git
+
+
+git stash	|--> To remove from add 
+git stash pop   |  	
+git stash apply |(temp stack storage)
+
+git branch somebranch (to create a new branch)
+git checkout somebranch (show current branch)
+
+git ls-files  (to list all files from all branches) if commited in other branches it will not visible in master/main branch so to "merge"
+TO change the commit message  --> git commit --amend -m "some message"
+
+To perform merge op in master branch from which --> git merge branch1
+	in case of conflict --> we have to do manually when a file is modified in both the branches 
+ 	git diff(to view the conflict) 
+	vi to the file --> keep req and edit the file.
+	git add and commit the merge op.
+
+If there is change in remote repo we have to synchronize them then only we can perform push or pull
+	--> git pull origin master -m "fg"  (to get latest data from remote repo)
+	--> git rebase master	
+
+git clear -xfd (local working directory)	           		
+git reset (after add from staging area) --soft,--mixed,--hard
+git revert(from revert)	
+
+gitk (GUI MODE)					   
